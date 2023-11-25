@@ -3,11 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section class="">
+    <title>Home page</title>
+    <style>
+        .sec{
+            width: 90vw;
+            height: auto;
+            background-color: darkseagreen;
+            margin: auto;
+            padding:3vw;
+        }
+        .head{
+            width: 100%;
+            height: 12vw;
+            background-color: antiquewhite;
+            padding-top: 1vw;
+            margin-bottom: 1vw;
+        }
+        .logo{
+            height: 5vw;
+            width: 5vw;
+            background-color:  rgb(209, 156, 186);
+            border-radius: 50%;
+            margin: auto;
+        }
+        .h{
+            float: right;
+            height: 5vw;
+            padding-right: 10px;
 
+        }
+        nav{
+            margin: auto;
+            text-align: center;
+        }
+        .ver{
+            height: 5vw;
+        }
+        .ver li{
+            display: inline;
+            float: left;
+        }
+       .ver a{
+            display: block;
+            padding:10px;
+            background-color: brown;
+            color: aliceblue;
+            text-decoration: none;
+            width: 15vw;
+          
+        }
+        .li a:hover{
+            background-color: green;
+            color: crimson;
+        }
+        .main{
+            height: 35vw;
+            width: 100%;
+            margin-bottom: 1vw;
+        }
+        .aside{
+            height: 100%;
+            width: 30%;
+            background-color:rgb(193, 211, 193);
+            margin-right: 5px;
+            float: left;
+        }
+        .div1{
+            height: 100%;
+            width: 69%;  
+            background-color: rgb(191, 224, 191);;
+            float: right;
+        }
+        .article{
+            width: 100%;
+            height: 50%;
+            background-color: rgb(188, 143, 178);
+            font-size: larger;
+            overflow: auto;
+            padding: 10px;
+             color: bisque;
+        }
+        .pic{
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+        .pic1{
+            height: 95%;
+            width: 33%;
+            margin: 5px;
+            border-radius: 10%;
+        }
+        img:hover{
+            opacity: .5;
+        }
+        .footer{
+            height: 5vw;
+            width: 100%;
+            text-align: center;
+            background-color: antiquewhite;
+            padding-top: 3px;
+        }
+    </style>
+<body>
+    <section class="sec">
+        <header class="head">
+           <div style="display: flex;"><div class="logo"><img src="logo-1.png"style="width:100%;height:100%"></div>
+            <div class="h"><h1>Header</h1></div></div>
+            <nav>
+                <ul class="ver">
+                    <li class="li"><a href="#">Home</a></li>
+                       <li class="li"> <a href="#">Notification</a></li>
+                       <li class="li"><a href="#">Description</a></li>
+                        <li class="li"><a href="#">Contacts</a></li>
+                        <li class="li"><a href="#">About</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+            <aside class="aside"></aside>
+            <div class="div1">
+                <div class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cumque dicta omnis odio, reiciendis sapiente iusto dolore incidunt, obcaecati
+                     perspiciatis officiis quia? Aliquid nobis reprehenderit, ex ut eveniet aut non dolore.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, corrupti autem.
+                     Tenetur quibusdam voluptatibus repudiandae laboriosam nesciunt ratione sit eaque 
+                     earum natus maiores itaque consequuntur, perspiciatis aut unde ipsa doloremque!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad asperiores eum!
+                       Vel, id rerum assumenda quam temporibus facilis consequatur soluta consectetur,
+                        voluptas reprehenderit adipisci eaque aut quaerat dolorum cumque. Lorem, ipsum
+                         dolor sit amet consectetur adipisicing elit. Maiores voluptates explicabo corporis 
+                         tenetur? Accusantium dolor quidem, alias a earum voluptas corporis officia harum 
+                         quibusdam incidunt aut expedita dolores tempore enim. Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit. Nostrum reprehenderit vero nisi voluptatum, sequi
+                          fugiat porro vitae perferendis maiores reiciendis ab totam velit rem quisquam 
+                          laborum deserunt enim voluptates voluptas!</div>
+                <div class="pic">
+                    <div class="pic1"><img src="download (2).jpg"style="width:100%;height:90%"></div>
+                    <div class="pic1"><img src="download (1).jpg"style="width:100%;height:90%"></div>
+                    <div class="pic1"><img src="download.jpg"style="width:100%;height:90%"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <h1>Footer</h1>
+        </footer>
     </section>
 </body>
 </html>
