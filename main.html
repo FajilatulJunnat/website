@@ -63,10 +63,43 @@
         }
         .aside{
             height: 100%;
-            width: 30%;
+            width: 28%;
             background-color:rgb(193, 211, 193);
             margin-right: 5px;
             float: left;
+            padding-left: 2vw;
+        }
+        .drop1{
+            position: relative;
+           display: inline-block;
+           padding-top:  5vw;
+           margin: auto;
+        }
+        .button{
+            background-color: darkorange;
+            color: white;
+            padding: 15px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            background-color: antiquewhite;
+            min-width: 70px;
+            z-index: 1;
+        }
+        .dropdown a{
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+        .drop1:hover .dropdown{
+            display: block;
+        }
+        .drop1:hover .button{
+            background-color: chartreuse;
         }
         .div1{
             height: 100%;
@@ -121,7 +154,32 @@
             </nav>
         </header>
         <div class="main">
-            <aside class="aside"></aside>
+            <aside class="aside">
+                <section class="drop1">
+                    <button class="button">Home</button>
+                    <div class="dropdown">
+                        <a href="#">link1</a>
+                        <a href="#">link2</a>
+                        <a href="#">link3</a>
+                    </div>
+                </section>
+                <section class="drop1">
+                    <button class="button">Home</button>
+                    <div class="dropdown">
+                        <a href="#">pink</a>
+                        <a href="#">brown</a>
+                        <a href="#">blue</a>
+                    </div>
+                </section>
+                <section class="drop1">
+                    <button class="button">Home</button>
+                    <div class="dropdown">
+                        <a href="#">cls-1</a>
+                        <a href="#">cls-2</a>
+                        <a href="#">cls-3</a>
+                    </div>
+                </section>
+            </aside>
             <div class="div1">
                 <div class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Cumque dicta omnis odio, reiciendis sapiente iusto dolore incidunt, obcaecati
